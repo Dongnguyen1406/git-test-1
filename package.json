@@ -1,0 +1,25 @@
+{
+  "name": "git-test-1",
+  "version": "1.0.0",
+  "description": "\"This is the Git and Node basic learning project\",",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dongnguyen1406/git-test-1.git",
+    "lite": "lite-server"
+  },
+  "author": "Dong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dongnguyen1406/git-test-1/issues"
+  },
+  "homepage": "https://github.com/Dongnguyen1406/git-test-1#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
