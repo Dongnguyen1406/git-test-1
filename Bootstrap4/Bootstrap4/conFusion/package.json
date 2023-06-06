@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "This is the Git and Node basic learning project"
+    "url": "https://github.com/Dongnguyen1406/git-test-1.git"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
