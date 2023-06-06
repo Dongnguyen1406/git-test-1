@@ -65,10 +65,9 @@
                         <img src="img/logo.png" class="img-fluid">
                     </div>
                     <div class="col-12 col-sm-6"><br><br>
-                        <a type="button" class="btn btn-block nav-link btn-warning" data-toggle="modal"
-                            data-target="#reservationModal" data-html="true"
-                            title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom"
-                            href="#reserve-form">Reserve Table</a>
+                        <a type="button" class="btn btn-block nav-link btn-warning" id="reserveTableButton" data-html="true"
+                         data-placement="bottom"
+                            href="#reserveTableModal">Reserve Table</a>
                     </div>
                 </div>
 
@@ -183,17 +182,17 @@
         </div>
     </div>
     <div class="container">
-        <div class="row col d-flex justify-content-center " id="reserveform">
-            <div id="reservationModal" class="modal fade">
+        <div class="row col d-flex justify-content-center" >
+            <div  class="modal fade" id="reservationModal" >
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Reserve a Table</h5>
+                        <div class="modal-header" style="background-color: rgb(99, 9, 184);">
+                            <h5 class="modal-title text-white">Reserve a Table</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body" style="background-color: rgb(190, 147, 230);">
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-sm-3">
@@ -238,8 +237,8 @@
                                 <label for="section">Section&emsp; &emsp; &emsp; &ensp; </label>
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                     <label class="btn btn-success active">
-                                        <input type="radio" name="section" id="nonSmoking" autocomplete="off" checked>
-                                        Non-Smoking
+                                        <input type="radio" name="section" id="nonSmoking" autocomplete="off"
+                                            checked> Non-Smoking
                                     </label>
                                     <label class="btn btn-danger">
                                         <input type="radio" name="section" id="smoking" autocomplete="off">
@@ -252,10 +251,10 @@
                                     <label for="date">Date and time</label>
                                 </div>
                                 <div class="date col-md-4">
-                                    <input type="" class="form-control" id="date" name="date" placeholder="Date">
+                                    <input type="" class="form-control" id="date" name="date">
                                 </div>
                                 <div class="time col-md-4">
-                                    <input type="" class="form-control" id="time" name="time" placeholder="Time">
+                                    <input type="" class="form-control" id="time" name="time">
                                 </div>
                             </div>
                             <form>
@@ -321,23 +320,23 @@
     </footer>
 
 
-    <div id="loginModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="content">
+    <div class="modal fade" role="dialog" id="loginModal">
+        <div class="modal-dialog modal-lg" role="content" >
             <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
+            <div class="modal-content" >
+                <div class="modal-header" style="background-color: rgb(99, 9, 184);">
                     <h4 class="modal-title">Login </h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="background-color: rgb(190, 147, 230);">
                     <form>
                         <div class="form-row">
-                            <div class="form-group col-sm-4">
+                            <div class="form-group col-sm-12">
                                 <label class="sr-only" for="exampleInputEmail3">Email address</label>
                                 <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
                                     placeholder="Enter email">
                             </div>
-                            <div class="form-group col-sm-4">
+                            <div class="form-group col-sm-12">
                                 <label class="sr-only" for="exampleInputPassword3">Password</label>
                                 <input type="password" class="form-control form-control-sm mr-1"
                                     id="exampleInputPassword3" placeholder="Password">
@@ -367,22 +366,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-            $("#mycarousel").carousel( { interval: 2000 } );
-            $("#carousel-pause").click(function(){
-                $("#mycarousel").carousel('pause');
-            });
-            $("#carousel-play").click(function(){
-                $("#mycarousel").carousel('cycle');
-            });
-
-        });
-    </script>
     
-
-
 </body>
 
 </html>
