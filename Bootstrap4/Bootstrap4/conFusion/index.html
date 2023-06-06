@@ -65,9 +65,10 @@
                         <img src="img/logo.png" class="img-fluid">
                     </div>
                     <div class="col-12 col-sm-6"><br><br>
-                        <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="tooltip"
-                            data-html="true" title="Or Call us at  <br><strong>+852 12345678</strong>"
-                            data-placement="bottom" href="#reserveform">Reserve Table</a>
+                        <a type="button" class="btn btn-block nav-link btn-warning" data-toggle="modal"
+                            data-target="#reservationModal" data-html="true"
+                            title="Or Call us at  <br><strong>+852 12345678</strong>" data-placement="bottom"
+                            href="#reserve-form">Reserve Table</a>
                     </div>
                 </div>
 
@@ -172,16 +173,18 @@
             </div>
         </div>
     </div>
-    <div class="container" id="reserveform">
-        <div class="row col d-flex justify-content-center " id="reserve-form">
-            <div id="reservationForm">
-                <div>
+    <div class="container" >
+        <div class="row col d-flex justify-content-center " id="reserveform">
+            <div id="reservationModal" class="modal fade">
+                <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="card-header bg-warning">
-                            <h5 class="text-white">Reserve a Table</h5>
+                        <div class="modal-header">
+                            <h5 class="modal-title">Reserve a Table</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
-                        <div class="card-body">
+                        <div class="modal-body">
                             <div class="form-group">
                                 <div class="row">
                                     <div class="col-sm-3">
@@ -222,7 +225,19 @@
 
                                 </div>
                             </div>
-
+                            <div class="form-group">
+                                <label for="section">Section&emsp; &emsp; &emsp; &ensp; </label>
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" name="section" id="nonSmoking" autocomplete="off" checked>
+                                        Non-Smoking
+                                    </label>
+                                    <label class="btn btn-danger">
+                                        <input type="radio" name="section" id="smoking" autocomplete="off">
+                                        Smoking
+                                    </label>
+                                </div>
+                            </div>
                             <div class="form-group row">
                                 <div class=" col-md-3">
                                     <label for="date">Date and time</label>
@@ -235,6 +250,7 @@
                                 </div>
                             </div>
                             <form>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
                                 <button type="submit" class="btn btn-primary">Reserve</button>
                             </form>
                         </div>
