@@ -4,10 +4,17 @@ import { Link } from 'react-router-dom';
 import CommentForm from './CommentForm';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
+import { FadeTransform, Fade, Stagger } from 'react-animation-components';
 
 function RenderDish({ dish }) {
   if (dish != null) {
     return (
+      // <FadeTransform
+      //   in
+      //   transformProps={{
+      //     exitTransform: 'scale(0.5) translateY(-50%)'
+      //   }}>
+
       <Card>
         <CardImg top src={baseUrl + dish.image} alt={dish.name} />
         <CardBody>
@@ -15,6 +22,7 @@ function RenderDish({ dish }) {
           <CardText>{dish.description}</CardText>
         </CardBody>
       </Card>
+      // </FadeTransform>
     );
   } else {
     return <div></div>;
